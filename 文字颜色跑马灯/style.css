@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 20vw;
+  background-color: #1a1919;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box span {
+  font-size: 96px;
+  font-weight: bolder;
+  color: #f00;
+  animation: shine 1s infinite alternate;
+  --delay: 100ms;
+}
+.box span:nth-child(1) {
+  animation-delay: calc(var(--delay) * 0);
+}
+.box span:nth-child(2) {
+  animation-delay: calc(var(--delay) * 1);
+}
+.box span:nth-child(3) {
+  animation-delay: calc(var(--delay) * 2);
+}
+.box span:nth-child(4) {
+  animation-delay: calc(var(--delay) * 3);
+}
+.box span:nth-child(5) {
+  animation-delay: calc(var(--delay) * 4);
+}
+.box span:nth-child(6) {
+  animation-delay: calc(var(--delay) * 5);
+}
+.box span:nth-child(7) {
+  animation-delay: calc(var(--delay) * 6);
+}
+.box span:nth-child(8) {
+  animation-delay: calc(var(--delay) * 7);
+}
+@keyframes shine {
+  form {
+    color: #f00;
+  }
+  to {
+    color: #fff;
+  }
+}

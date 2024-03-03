@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 20vw;
+    background-color: #1a1919;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    span {
+        font-size: 96px;
+        font-weight: bolder;
+        color: #f00;
+        animation: shine 1s infinite alternate;
+    }
+
+    @for i from 1 through 8 {
+        span:nth-child(i) {
+            animation-delay: 0.1s * (i - 1);
+        }
+    }
+}
+
+@keyframes shine {
+    form {
+        color: #f00;
+    }
+
+    to {
+        color: #fff;
+    }
+}

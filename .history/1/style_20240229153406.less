@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+
+}
+
+
+span {
+    font-size: 36px;
+    line-height: 1.25;
+    background-image: linear-gradient(to right, #ff6666, #000);
+    background-size: 0 3px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: inline;
+    transition: background-size 2s;
+    
+    &:hover {
+        background-size: 100% 3px;
+        background-position: bottom left;
+    }
+}
